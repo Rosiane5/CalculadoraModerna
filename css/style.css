@@ -1,0 +1,141 @@
+:root {
+    --gradient: linear-gradient(90deg, hsla(358, 26%, 79%, 1) 0%, hsla(273, 60%, 73%, 1) 50%, hsla(356, 53%, 57%, 1) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: var(--gradient); 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    font-family:  'optional, snas-serif';
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    
+    
+    
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    max-width: 500px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'optional', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    background-color: beige;
+    background-size: 200%; 
+    margin:10px auto;
+    border: none ;
+    border-radius: 45px;
+}
+
+.numbers {
+    margin-top: 5px;
+    display: flex;
+    padding: 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button.result{
+    font-size: 30px;
+    width: 100px;
+}
+
+ button {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    gap: 10px;
+    border: none;
+    font-family: 'optional', sans-serif;
+    font-size: 40px;
+    border-radius: 90px;
+    background: var(--gradient);
+    background-size: 200%; /* Faz o gradiente ser maior para animar */
+    animation: water-effect 4s infinite ease-in-out; /* Chama a animação */
+    cursor: pointer;
+    color: #fff;
+   
+ }
+
+ button:hover {
+    transform: scale(1.1);
+}
+
+button.result{
+    font-size: 30px;
+    width: 100px;
+    background-color: blueviolet !important;
+   
+}   
+
+
+@media(max-width: 600px) {
+    .container {
+        width: 100%;
+        height: auto;
+     
+       
+    }
+
+    input {
+        width: 90%;
+        height: auto;
+        font-size: 16px;
+        margin: 10px;
+       
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 40px;
+    }
+
+  
+}
+
+@media(max-width:400px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    input {
+        width: 100%;
+        height: auto;
+        margin:5px;
+        font-size: 12px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
